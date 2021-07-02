@@ -237,11 +237,12 @@ def run(manager: Manager, testing: bool = False) -> Any:
     else:
         icon = QIcon(":/logo.png")
 
-    trayIcon = TrayIcon(manager, icon, widget, testing=testing)
-    trayIcon.show()
+    # Should Run with TrayIcon Hidden
+    # trayIcon = TrayIcon(manager, icon, widget, testing=testing)
+    # trayIcon.show()
 
     QApplication.setQuitOnLastWindowClosed(False)
 
-    logger.info("Initialized aw-qt and trayicon succesfully")
+    logger.info("Initialized aw-qt succesfully")
     # Run the application, blocks until quit
     return app.exec_()
