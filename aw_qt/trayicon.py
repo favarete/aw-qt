@@ -237,8 +237,8 @@ def run(manager: Manager, testing: bool = False) -> Any:
     else:
         icon = QIcon(":/logo.png")
 
-    trayIcon = TrayIcon(manager, icon, widget, testing=testing)
-    trayIcon.show()
+    # trayIcon = TrayIcon(manager, icon, widget, testing=testing)
+    # trayIcon.show()
 
     QApplication.setQuitOnLastWindowClosed(False)
 
