@@ -235,6 +235,7 @@ def run(manager: Manager, testing: bool = False) -> Any:
         # Allow macOS to use filters for changing the icon's color
         icon.setIsMask(True)
     else:
+        pass
         icon = QIcon(":/logo.png")
 
     # trayIcon = TrayIcon(manager, icon, widget, testing=testing)
